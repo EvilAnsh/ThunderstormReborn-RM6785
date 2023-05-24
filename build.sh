@@ -9,7 +9,7 @@ ccache -M 100G
 export ARCH=arm64
 export KBUILD_BUILD_HOST=Mnml
 export KBUILD_BUILD_USER="edith_brownie|For•RM6785"
-git clone --depth=1 https://github.com/GhostMaster69-dev/cosmic-clang.git clang
+git clone --depth=1 https://gitlab.com/Panchajanya1999/azure-clang.git clang
 
 [ -d "out" ] && rm -rf AnyKernel && rm -rf out || mkdir -p out
 
