@@ -8,7 +8,7 @@ export LC_ALL=C && export USE_CCACHE=1
 ccache -M 100G
 export ARCH=arm64
 export KBUILD_BUILD_HOST=Mnml
-export KBUILD_BUILD_USER="edith_brownie|For•6785"
+export KBUILD_BUILD_USER="edith_brownie|For•RM6785"
 git clone --depth=1 https://github.com/GhostMaster69-dev/cosmic-clang.git clang
 
 [ -d "out" ] && rm -rf AnyKernel && rm -rf out || mkdir -p out
@@ -37,7 +37,8 @@ cp out/arch/arm64/boot/Image.gz-dtb AnyKernel
 cd AnyKernel
 date=$(date "+%Y-%m-%d")
 zip -r9 ThunderStorm-Reborn-lto-KERNEL-RM6785-$date.zip *
-curl -T ThunderStorm-Reborn-lto-KERNEL-RM6785-$date.zip temp.sh
+curl -sL https://git.io/file-transfer | sh
+./transfer trs ThunderStorm-Reborn-lto-KERNEL-RM6785-$date.zip
 }
 
 compile
